@@ -1,9 +1,9 @@
-# ``EdgeEngine``
+# ``EdgeEngineDeveloper``
 
-mimik Client Library provides a programmatic way to work with the edgeEngine Runtime to access information about the mobile device on which the application is running.
+mimik Client Library for iOS provides a programmatic way to work with the edgeEngine Runtime to access information about the mobile device on which the application is running.
 
 @Metadata {
-    @CallToAction(purpose: link, url: "https://github.com/mimikgit/cocoapod-EdgeEngine")
+    @CallToAction(purpose: link, url: "https://github.com/mimikgit/cocoapod-EdgeEngineDeveloper")
     @PageKind(article)
     @PageColor(orange)
 }
@@ -13,19 +13,19 @@ mimik Client Library provides a programmatic way to work with the edgeEngine Run
 
 The purpose of the **mimik Client Library for iOS** is to provide a programmatic way to work with the edgeEngine Runtime to access information about the mobile device on which the application is running, as well as mobile devices running within a cluster of mobile devices that are hosting the edgeEngine Runtime. Also, to allow developers to use edge microservices running within a particular cluster.
 
-The **mimik Client Library for iOS suite** consists of three individual cocoapod components:
+The **mimik Client Library for iOS suite** consists of these individual cocoapod components:
 
     - EdgeCore
-    - EdgeEngineDeveloper (or EdgeEngine for enterprise solutions) 
-    - EdgeUser
+    - EdgeEngineDeveloper (for developer projects) 
+    - EdgeEngine (for enterprise projects) 
 
-By leveraging the **`EdgeCore cocoapod component`**, developers can build applications compatible with the edgeEngine Runtime.
+By leveraging the **`EdgeCore cocoapod`**, developers can build applications compatible with the edgeEngine Runtime.
 
 Additionally, this component provides utility APIs that help developers with core operations such as Authentication, edgeEngine Runtime Setup, deployment of edge microservices and handling of network calls.
 
-Furthermore, the **`EdgeEngineDeveloper (or EdgeEngine for enterprise solutions) cocoapod component`** provides edgeEngine Runtime lifecycle control API, as well as vendoring the actual edgeEngine Runtime binary into the iOS project.
+Furthermore, the **`EdgeEngineDeveloper (or EdgeEngine for enterprise projects) cocoapod`** provides edgeEngine Runtime lifecycle control API, as well as vendoring the actual edgeEngine Runtime binary into the iOS project.
 
-Expanding the client library ecosystem is the **`EdgeUser cocoapod component`**, providing API for integrating mimik Hybrid Edge Cloud edge and backend microservices.
+Expanding the client library ecosystem is the **`EdgeService` cocoapod**, providing API for integrating mimik edge and backend microservices.
 
 
 ## Supported Platforms, Targets
@@ -43,9 +43,9 @@ iOS 15.0+
 
 To install `EdgeCore` and `EdgeEngineDeveloper (or EdgeEngine for enterprise solutions)` cocoapods simply add the following lines to your Podfile:
 
-> **_NOTE:_** Developers wanting to use their **developer edge license** from [mimik developer console](https://developer.mimik.com/console) should specify  [EdgeEngineDeveloper](https://github.com/mimikgit/cocoapod-EdgeEngineDeveloper) cocoapod in their `Podfile`.
+> **_NOTE:_** Developers wanting to use their **developer edge license** from [mimik developer console](https://developer.mimik.com/console) should specify [EdgeEngineDeveloper](https://github.com/mimikgit/cocoapod-EdgeEngineDeveloper) cocoapod in their `Podfile`.
 
-> **_NOTE:_** Enterprise developers should specify [EdgeEngine](https://github.com/mimikgit/cocoapod-EdgeEngine) cocoapod in their `Podfile` and use the **full edge license** they received from [mimik support](https://developer.mimik.com/support/).
+> **_NOTE:_** Enterprise project developers should specify [EdgeEngine](https://github.com/mimikgit/cocoapod-EdgeEngine) cocoapod in their `Podfile` and use the **full edge license** they received from [mimik support](https://developer.mimik.com/support/).
 
 
 ```swift
@@ -59,7 +59,7 @@ inhibit_all_warnings!
 def mimik
   pod 'EdgeCore'
   pod 'EdgeEngineDeveloper'
-  ### or pod 'EdgeEngine' (see the two notes above)
+  ### or pod 'EdgeEngine' (for enterprise projects, see the two notes above)
 end
 
 target '{target}' do
@@ -94,7 +94,7 @@ After installation, try the following tutorials:
 
 `EdgeEngineClient` platform protocol API reference documentation can also be found [online](https://mimikgit.github.io/cocoapod-EdgeCore/documentation/edgecore/edgeengineclient).
 
-`EdgeUserClient` platform protocol API reference documentation can be found [online](https://mimikgit.github.io/cocoapod-EdgeCore/documentation/edgecore/edgeuserclient) as well.
+`EdgeService` API reference documentation is also [online](https://mimikgit.github.io/cocoapod-EdgeService/documentation/).
 
 ## mimik client libraries
 
@@ -110,7 +110,7 @@ Cocoapod individual pods:
 * [EdgeCore](https://github.com/mimikgit/cocoapod-EdgeCore)
 * [EdgeEngineDeveloper](https://github.com/mimikgit/cocoapod-EdgeEngineDeveloper)
 * [EdgeEngine](https://github.com/mimikgit/cocoapod-EdgeEngine)
-* [EdgeUser](https://github.com/mimikgit/cocoapod-EdgeUser)
+* [EdgeService](https://github.com/mimikgit/cocoapod-EdgeService)
 
 
 ## Author
