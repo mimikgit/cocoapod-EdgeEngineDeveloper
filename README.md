@@ -1,3 +1,9 @@
+PLEASE NOTE THIS MIMIK EDGEENGINE CLIENT LIBRARY IS NO LONGER BEING MAINTENAINED
+
+THE NEXT GENERATION CLIENT LIBRARY IS AVAILABLE HERE: https://github.com/mimikgit/cocoapod-EdgeEngine
+
+
+
 # ``EdgeEngineDeveloper``
 
 mimik Client Library for iOS provides a programmatic way to work with the edgeEngine Runtime to access information about the mobile device on which the application is running.
